@@ -1,0 +1,717 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Main.css">
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <header class="nav" role="navigation" aria-label="Menu">
+            <a href="#" class="logo">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="6" fill="white" fill-opacity="0.06"></rect>
+                    <path d="M6 12h12" stroke="white" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round"></path>
+                </svg>
+                <span class="brand">Hasnaa Mohamed — Portfolio</span>
+            </a>
+
+            <nav>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Service</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#clients">Happy Clients</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+
+                <div class="download">
+                    <button class="btn-cta">Download CV</button>
+
+                    <div class="avatar-wrap">
+                    <div class="avatar glass-card" title="Personal image">
+                        <img src="Icon_Image.jpeg" alt="Personal Image">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="background">
+                    <button class="menu__icon" id="menuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="overlay" id="overlay"></div>
+
+                <div class="side-menu" id="sideMenu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Service</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#clients">Happy Clients</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="Home" id="home">
+            <div class="right">
+                <h6>Turning ideas into beautiful, functional realities</h6>
+                <h1>
+                    <span class="name">Hi, I’m Hasnaa Mohamed,</span>
+                    <span class="typing"></span>
+                </h1>
+                <p>Monthly Mini Report showcasing website growth and visitor statistics , presented in a clean, modern, and fully responsive design for an optimal viewing experience on any device.</p>
+                
+                <div class="flex items-center">
+                    <div class="relative group">
+                        <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+                            <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                            <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+                                <div class="see relative z-10 flex items-center space-x-2">
+                                    <span class="transition-all duration-500 group-hover:translate-x-1">
+                                        See My Work
+                                    </span>
+                                    <svg class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1" data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="left">
+                <img src="Hero_Image.jpeg" alt="My Photo">
+            </div>
+        </div>
+
+        <div class="About" id="about">
+            <div class="right">
+                <img src="About_Image.jpeg" alt="">
+                <div class="happy-clients">
+                    <i class="fa-solid fa-face-smile-beam"></i> 
+                    <div class="happy-felx" id="counter-widget">
+                        <span id="counter">+1</span>
+                        <p>happy client</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Left">
+                <h5>
+                    About Me
+                    <span class="crown-container">
+                    <i class="fa-solid fa-crown"></i>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    </span>
+                </h5>
+                <h1>Why you <span>hire me</span> for your <span>next project</span></h1>
+                <div class="options">
+                    <span class="active" onclick="showParagraph('myself')">MYSELF</span>
+                    <span onclick="showParagraph('education')">EDUCATION</span>
+                    <span onclick="showParagraph('tools')">MY TOOLS</span>
+                </div>
+
+                <div id="content" class="content"></div>
+
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Learn More</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="Project" id="projects">
+            <i class="fa-solid fa-tools icon icon-right first"></i>
+            <i class="fa-solid fa-lightbulb icon icon-right second"></i>
+            <i class="fa-solid fa-compass-drafting icon icon-left first"></i>
+            <i class="fa-solid fa-puzzle-piece icon icon-left second"></i>
+
+            <h6 id="line1">Bringing creative ideas to life</h6>
+            <h1 id="line2">Crafting modern <span></span> experiences</h1>
+            <p id="line3"></p>
+
+            <div class="Project-Div">
+                <div class="Project1 card">
+                    <img src="Project1.png" alt="">
+                    <h3>Vive Wave</h3>
+                    <p>Vive Wave is a modern online eLibrary offering a vast collection of books, research papers, and multimedia resources, accessible anytime and anywhere.</p>
+                    <div class="btn-conteiner">
+                        <a class="btn-content" href="#">
+                            <span class="btn-title">Explore Now</span>
+                            <span class="icon-arrow">
+                                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                    <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                    <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                    </g>
+                                </svg>
+                            </span> 
+                        </a>
+                    </div>
+                </div>
+                <div class="Project2 card">
+                    <img src="Project2.jpg" alt="">
+                    <h3>AI Daily News</h3>
+                    <p>AI Daily News is a dedicated online magazine delivering the latest updates, trends, and breakthroughs in artificial intelligence, all in one place.</p>
+                    <div class="btn-conteiner">
+                        <a class="btn-content" href="#">
+                            <span class="btn-title">Explore Now</span>
+                            <span class="icon-arrow">
+                                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                    <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                    <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                    </g>
+                                </svg>
+                            </span> 
+                        </a>
+                    </div>
+                </div>
+                <div class="Project3 card">
+                    <img src="Project3.png" alt="">
+                    <h3>Taste Trail</h3>
+                    <p>Taste Trail is a vibrant restaurant website showcasing diverse menus, chef’s specials, and an unforgettable dining experience for every food lover.</p>
+                    <div class="btn-conteiner">
+                        <a class="btn-content" href="#">
+                            <span class="btn-title">Explore Now</span>
+                            <span class="icon-arrow">
+                                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                    <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                    <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                    </g>
+                                </svg>
+                            </span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Service" id="services">
+            <h5>
+                Services
+                <span class="crown-container">
+                    <i class="fa-solid fa-crown"></i>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                </span>
+            </h5>
+            <h1>How Can <span>i help you</span></h1>
+            <div class="Service-Boxs">
+                <div class="Service-Box">
+                    <i class="fa-solid fa-laptop-code service-icon"></i>
+                    <h6>8 Projects</h6>
+                    <h2>Frontend Development</h2>
+                    <p> I craft modern, responsive, and fully functional websites with clean code and pixel-perfect design for a flawless user experience.  </p>
+                    <div class="explore-link">
+                        <span>Explore</span>
+                        <hr>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="Service-Box">
+                    <i class="fa-solid fa-palette service-icon"></i>
+                    <h6>12 Project</h6>
+                    <h2>Creative & Stylish Design</h2>
+                    <p>Bringing ideas to life with stunning visuals, balanced colors, and unique layouts that leave a lasting impression.</p>
+                    <div class="explore-link">
+                        <span>Explore</span>
+                        <hr>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="Service-Box">
+                    <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                    <h6>8 Project</h6>
+                    <h2>Responsive & Animated UI</h2>
+                    <p>Delivering fully responsive interfaces with smooth animations and vibrant colors, optimized for all devices.</p>
+                    <div class="explore-link">
+                        <span>Explore</span>
+                        <hr>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Gallery" id="gallery">
+            <div class="title">
+                <div class="left">
+                    <h5>
+                        Gallery
+                        <span class="crown-container">
+                            <i class="fa-solid fa-crown"></i>
+                            <span class="sparkle"></span>
+                            <span class="sparkle"></span>
+                            <span class="sparkle"></span>
+                        </span>
+                    </h5>
+                    <h1>Where Ideas Meet<span>Art</span></h1>
+                </div>
+                <div class="right">
+                    <span class="counter">+1</span>
+                    <span class="glow top"></span>
+                    <span class="glow bottom"></span>
+                </div>
+            </div>
+            <div class="image-strips">
+                <div class="strip strip-top">
+                    <div class="strip-content">
+                        <div class="img-box"><img src="gallery1.png" alt=""></div>
+                        <div class="img-box"><img src="gallery2.png" alt=""></div>
+                        <div class="img-box"><img src="gallery3.png" alt=""></div>
+                        <div class="img-box"><img src="gallery4.png" alt=""></div>
+                        <div class="img-box"><img src="gallery5.png" alt=""></div>
+                        <div class="img-box"><img src="gallery6.png" alt=""></div>
+                        <div class="img-box"><img src="gallery7.png" alt=""></div>
+
+                        <div class="img-box"><img src="gallery1.png" alt=""></div>
+                        <div class="img-box"><img src="gallery2.png" alt=""></div>
+                        <div class="img-box"><img src="gallery3.png" alt=""></div>
+                        <div class="img-box"><img src="gallery4.png" alt=""></div>
+                        <div class="img-box"><img src="gallery5.png" alt=""></div>
+                        <div class="img-box"><img src="gallery6.png" alt=""></div>
+                        <div class="img-box"><img src="gallery7.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="strip strip-bottom">
+                    <div class="strip-content">
+                        <div class="img-box"><img src="gallery8.png" alt=""></div>
+                        <div class="img-box"><img src="gallery9.png" alt=""></div>
+                        <div class="img-box"><img src="gallery10.png" alt=""></div>
+                        <div class="img-box"><img src="gallery11.png" alt=""></div>
+                        <div class="img-box"><img src="gallery12.png" alt=""></div>
+                        <div class="img-box"><img src="gallery13.png" alt=""></div>
+                        <div class="img-box"><img src="gallery14.png" alt=""></div>
+
+                        <div class="img-box"><img src="gallery8.png" alt=""></div>
+                        <div class="img-box"><img src="gallery9.png" alt=""></div>
+                        <div class="img-box"><img src="gallery10.png" alt=""></div>
+                        <div class="img-box"><img src="gallery11.png" alt=""></div>
+                        <div class="img-box"><img src="gallery12.png" alt=""></div>
+                        <div class="img-box"><img src="gallery13.png" alt=""></div>
+                        <div class="img-box"><img src="gallery14.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Clients" id="clients">
+            <div class="right">
+                <h5>
+                    Happy Client
+                    <span class="crown-container">
+                    <i class="fa-solid fa-crown"></i>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    </span>
+                </h5>
+                <h2>I work with over +15 <span>happy clients</span></h2>
+                <p>Over the years, I’ve had the pleasure of working with more than 15 amazing clients, delivering creative, high-quality projects that bring their ideas to life.</p>
+            </div>
+            <div class="left">
+
+                <div class="widget-card c1">
+                    <div class="card-top">
+                        <span class="logo"><i class="fa-solid fa-display"></i></span>
+                        <h3>Web Design</h3>
+                    </div>
+                    <div class="card-bottom">Web Design</div>
+                    </div>
+
+                    <div class="widget-card c2">
+                    <div class="card-top">
+                        <span class="logo"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        <h3>Responsive UI</h3>
+                    </div>
+                    <div class="card-bottom">Responsive UI</div>
+                    </div>
+
+                    <div class="widget-card c3">
+                    <div class="card-top">
+                        <span class="logo"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <h3>Animations</h3>
+                    </div>
+                    <div class="card-bottom">Animations</div>
+                    </div>
+
+                    <div class="widget-card c4">
+                    <div class="card-top">
+                        <span class="logo"><i class="fa-solid fa-pen-nib"></i></span>
+                        <h3>Branding</h3>
+                    </div>
+                    <div class="card-bottom">Branding</div>
+                    </div>
+
+                    <div class="widget-card c5">
+                    <div class="card-top">
+                        <span class="logo"><i class="fa-solid fa-bolt"></i></span>
+                        <h3>Performance</h3>
+                    </div>
+                    <div class="card-bottom">Performance</div>
+                    </div>
+
+                    <div class="widget-card c6">
+                    <div class="card-top">
+                        <span class="logo"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+                        <h3>SEO Ready</h3>
+                    </div>
+                    <div class="card-bottom">SEO Ready</div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="Contact" id="contact">
+            <div class="title">
+                <h2>Let's Discuss Your Project</h2>
+                <h5>Always available for freelancing if the right project comes along,</h5>
+                <h5>Feel free to contact me.</h5>
+            </div>
+            <div class="table">
+                <div class="left">
+                    <img src="Hero_Image.jpeg" alt="">
+                    <div class="box">
+                        <h6>Based in</h6>
+                        <h3>Damietta, Egypt</h3>
+                    </div>
+                    <div class="box">
+                        <h6>Phone</h6>
+                        <h3>+20 106 350 6636</h3>
+                    </div>
+                </div>
+                <div class="middle">
+                    <button class="facebook"> 
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="33" viewBox="0 0 512 512" height="33"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#3a5ba2" d="m256.23 512c140.58 0 255.77-115.19 255.77-255.77 0-141.046-115.19-256.23-255.77-256.23-141.046 0-256.23 115.184-256.23 256.23 0 140.58 115.184 255.77 256.23 255.77z"></path><path fill="#fff" d="m224.023 160.085c0-35.372 28.575-63.946 63.938-63.946h48.072v63.946h-32.199c-8.608 0-15.873 7.257-15.873 15.873v32.192h48.072v63.938h-48.072v144.22h-63.938v-144.22h-48.065v-63.938h48.065z"></path></g></svg></span>
+                        <span class="text1">Follow me</span>
+                        <span class="text2">1,8k</span> 
+                    </button>
+                    <button class="linkedin"> 
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 448 512" style="background-color: #0A66C2; border-radius: 50%; padding: 8px; box-sizing: border-box;">
+                            <path fill="#fff" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 1 1 107.58 0c0 29.7-24.09 54.3-53.79 54.3zM447.9 448h-92.4V302.4c0-34.7-.7-79.3-48.4-79.3-48.4 0-55.8 37.8-55.8 76.8V448h-92.5V148.9h88.8v40.8h1.3c12.4-23.5 42.6-48.4 87.8-48.4 93.9 0 111.2 61.8 111.2 142.3V448z"/>
+                            </svg>
+                        </span>
+                        <span class="text1">Follow me</span>
+                        <span class="text2">1.5k</span> 
+                    </button>
+                </div>
+                <div class="right">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="Input width">
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="Input width">
+                                <label for="name">Email</label>
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="Input">
+                            <label for="name">Your Message</label>
+                            <textarea placeholder="Write Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <hr>
+            <p>@ 2025 All Rights Reserved | Hasnaa Mohamed</p>
+        </footer>
+
+        <script>
+            function showParagraph(section) {
+                const contentDiv = document.getElementById('content');
+                let text = '';
+
+                if (section === 'myself') {
+                text = 'I began web development with WordPress, creating 10+ projects that introduced me to website building. As my curiosity grew, I wanted to go beyond templates to understand the web better. So, I learned coding and completed several projects from scratch, marking a big step in my development.';
+                } else if (section === 'education') {
+                text = "Junior at the Faculty of Artificial Intelligence, Menoufia University, I’m pursuing my bachelor's. Despite my AI major, I’m passionate about web development. I self-taught WordPress in 8 months and later improved my skills by completing a Fullstack .NET course with Egypt Digital Pioneers.";
+                } else if (section === 'tools') {
+                text = 'Skilled in HTML, CSS, JavaScript, and Bootstrap, I create highly responsive and user-friendly web designs that adapt seamlessly across different devices, ensuring an optimal experience for every user.';
+                }
+
+                contentDiv.innerHTML = '<p>' + text + '</p>';
+            }
+
+            window.onload = function() {
+                showParagraph('myself');
+            };
+        </script>
+
+        <script>
+            const typingElement = document.querySelector('.typing');
+            const phrases = ['Front-End Developer', 'CMS Designer'];
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let typingSpeed = 100; 
+            let deletingSpeed = 50;
+            let delayBetween = 1500; 
+
+            function type() {
+                if (charIndex < phrases[phraseIndex].length) {
+                typingElement.textContent += phrases[phraseIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingSpeed);
+                } else {
+                setTimeout(erase, delayBetween);
+                }
+            }
+
+            function erase() {
+                if (charIndex > 0) {
+                typingElement.textContent = phrases[phraseIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, deletingSpeed);
+                } else {
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(type, typingSpeed);
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                type();
+            });
+        </script>
+
+        <script>
+            const counter = document.getElementById('counter');
+            const widget = document.getElementById('counter-widget');
+            let current = 1;
+            const target = 10;
+            let started = false;
+
+            function updateCounter() {
+                if (current <= target) {
+                counter.textContent = "+" + current;
+                const speed = Math.floor(Math.random() * 150) + 50;
+                current++;
+                setTimeout(updateCounter, speed);
+                }
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting && !started) {
+                    started = true; 
+                    updateCounter();
+                }
+                });
+            }, {
+                threshold: 0.7
+            });
+
+            observer.observe(widget);
+        </script>
+
+        <script>
+            const line1 = document.getElementById('line1');
+            const line2 = document.getElementById('line2');
+            const span = line2.querySelector('span');
+            const line3 = document.getElementById('line3');
+
+            const beforeSpan = 'Crafting modern ';
+            const spanText = 'web';
+            const afterSpan = ' experiences';
+            const text3 = 'From concept to code, delivering seamless and engaging user interfaces.';
+
+            function startProjectTyping() {
+                line1.classList.add('slide-up');
+
+                setTimeout(() => {
+                    typeTwoParts(beforeSpan, spanText, afterSpan, 40, () => {
+                        typeText(line3, text3, 20);
+                    });
+                }, 900);
+            }
+
+            function typeTwoParts(beforeSpan, spanText, afterSpan, speed, callback) {
+                line2.innerHTML = ''; 
+                let i = 0, j = 0;
+                const tempSpan = document.createElement('span');
+                tempSpan.style.color = '#4CC9F0';
+                tempSpan.style.margin = '0 8px';
+
+                function typeBefore() {
+                    if (i < beforeSpan.length) {
+                        line2.innerHTML += beforeSpan[i++];
+                        setTimeout(typeBefore, speed);
+                    } else {
+                        line2.appendChild(tempSpan);
+                        typeSpan();
+                    }
+                }
+
+                function typeSpan() {
+                    if (j < spanText.length) {
+                        tempSpan.textContent += spanText[j++];
+                        setTimeout(typeSpan, speed);
+                    } else {
+                        line2.innerHTML += afterSpan;
+                        if (callback) callback();
+                    }
+                }
+
+                typeBefore();
+            }
+
+            function typeText(element, text, speed, callback) {
+                element.textContent = '';
+                let i = 0;
+                function typing() {
+                    if (i < text.length) {
+                        element.textContent += text[i++];
+                        setTimeout(typing, speed);
+                    } else {
+                        if (callback) callback();
+                    }
+                }
+                typing();
+            }
+
+            let projectStarted = false;
+            const projectSection = document.querySelector('.Project');
+
+            const projectObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !projectStarted) {
+                        projectStarted = true;
+                        startProjectTyping();
+                    }
+                });
+            }, { threshold: 0.5 }); 
+
+            projectObserver.observe(projectSection);
+
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const counter = document.querySelector('.counter');
+                let num = 0;
+                let started = false;
+
+                const startCounting = () => {
+                    if (started) return; 
+                    started = true;
+
+                    const interval = setInterval(() => {
+                        num++;
+                        counter.textContent = `+${num}`;
+                        if (num >= 12) {
+                            clearInterval(interval); 
+                        }
+                    }, 200);
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            startCounting();
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(counter);
+            });
+        </script>
+
+        <script>
+            const menuBtn  = document.getElementById('menuBtn');
+            const sideMenu = document.getElementById('sideMenu');
+            const overlay  = document.getElementById('overlay');
+
+            const openMenu = () => {
+                sideMenu.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; 
+            };
+
+            const closeMenu = () => {
+                sideMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = ''; 
+            };
+
+            menuBtn.addEventListener('click', () => {
+                sideMenu.classList.contains('active') ? closeMenu() : openMenu();
+            });
+
+            sideMenu.querySelectorAll('a').forEach(a => {
+                a.addEventListener('click', closeMenu);
+            });
+
+            overlay.addEventListener('click', closeMenu);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeMenu();
+            });
+        </script>
+
+        <script>
+            const sections = document.querySelectorAll("section"); 
+            const navLinks = document.querySelectorAll(".side-menu a");
+
+            navLinks[0].classList.add("active");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+
+                sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; 
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+                });
+
+                navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active");
+                }
+                });
+            });
+        </script>
+
+        <script src="Main.js"></script>
+
+    </body>
+</html>
